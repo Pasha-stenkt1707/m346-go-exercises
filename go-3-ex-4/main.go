@@ -19,12 +19,19 @@ const (
 	Ace   = 'A'
 )
 
+
 func main() {
 	suits := []rune{Diamonds, Spades, Clubs, Hearts}
 	ranks := []rune{Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace}
 
 	// TODO: Loop over suits and ranks to output all combinations.
+	for _, s := range suits {
+		for _, r := range ranks {
+			fmt.Printf("%c%c\n", s, r)
+		}
+	}
 
 	// TODO: delete this line afterwards
 	fmt.Println(suits, ranks)
 }
+
